@@ -1,0 +1,7 @@
+services:
+  payments-api:
+    build: .
+    env_file: .env
+    ports:
+      - "8080:8080"
+    # TODO: the service needs its database added here for local development.

@@ -1,0 +1,4 @@
+service: payments-api
+runtime: python3.12
+datastore: postgres-15
+port: 8080
