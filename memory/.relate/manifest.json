@@ -1,0 +1,109 @@
+{
+  "codec": "markdown",
+  "checkpoint_lsn": 3,
+  "commit_ts": 5,
+  "value_encoding": 2,
+  "next_node_id": 8,
+  "next_rel_id": 8,
+  "indexes": [],
+  "constraints": [],
+  "theater": {
+    "databases": {
+      "neo4j": [
+        25,
+        false
+      ],
+      "system": [
+        25,
+        false
+      ],
+      "system_ontologies": [
+        25,
+        false
+      ]
+    },
+    "index_details": {},
+    "index_options": {},
+    "graph_types": {},
+    "current_graph_type": {
+      "node_types": [],
+      "edge_types": [],
+      "constraints": [],
+      "drop_constraint_names": []
+    },
+    "derived_constraints": {}
+  },
+  "read_only": false,
+  "learned": {
+    "keys": {
+      "Agent": "name",
+      "Entity": "name",
+      "Fact": "name",
+      "Source": "name"
+    },
+    "rel_types": [
+      "ABOUT",
+      "ASSERTED_BY",
+      "SOURCE",
+      "SUPERSEDES"
+    ],
+    "raw_files": [],
+    "folded_keys": []
+  },
+  "embeddings": {},
+  "files": {
+    "Agent/reviewer.md": {
+      "len": 35,
+      "crc": 3656854312,
+      "mtime": 1795543211935701575
+    },
+    "Agent/scout.md": {
+      "len": 32,
+      "crc": 917068788,
+      "mtime": 1795543211733702297
+    },
+    "Entity/payments-api.md": {
+      "len": 40,
+      "crc": 4055315748,
+      "mtime": 1795543211733702297
+    },
+    "Fact/payments-api--database--mongodb-8.md": {
+      "len": 327,
+      "crc": 1277389962,
+      "mtime": 1795543211937701568
+    },
+    "Fact/payments-api--database--postgres-15.md": {
+      "len": 282,
+      "crc": 3497886004,
+      "mtime": 1795543211827701961
+    },
+    "Source/docker-compose-yml.md": {
+      "len": 70,
+      "crc": 1787185698,
+      "mtime": 1795543211938701564
+    },
+    "Source/payments-api-demo-service-yaml.md": {
+      "len": 285,
+      "crc": 2597980261,
+      "mtime": 1795543211733702297
+    }
+  },
+  "node_ids": {
+    "Agent/reviewer": 5,
+    "Agent/scout": 1,
+    "Entity/payments-api": 2,
+    "Fact/payments-api--database--mongodb-8": 7,
+    "Fact/payments-api--database--postgres-15": 3,
+    "Source/docker-compose-yml": 6,
+    "Source/payments-api-demo-service-yaml": 4
+  },
+  "rel_ids": {
+    "Fact/payments-api--database--mongodb-8\u0001ABOUT\u0001Entity/payments-api\u0001{}": 4,
+    "Fact/payments-api--database--mongodb-8\u0001ASSERTED_BY\u0001Agent/reviewer\u0001{}": 5,
+    "Fact/payments-api--database--mongodb-8\u0001SOURCE\u0001Source/docker-compose-yml\u0001{}": 6,
+    "Fact/payments-api--database--mongodb-8\u0001SUPERSEDES\u0001Fact/payments-api--database--postgres-15\u0001{}": 7,
+    "Fact/payments-api--database--postgres-15\u0001ABOUT\u0001Entity/payments-api\u0001{}": 1,
+    "Fact/payments-api--database--postgres-15\u0001ASSERTED_BY\u0001Agent/scout\u0001{}": 2,
+    "Fact/payments-api--database--postgres-15\u0001SOURCE\u0001Source/payments-api-demo-service-yaml\u0001{}": 3
+  }
+}
