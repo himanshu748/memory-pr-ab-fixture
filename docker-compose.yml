@@ -4,4 +4,13 @@ services:
     env_file: .env
     ports:
       - "8080:8080"
-    # TODO: the service needs its database added here for local development.
+    depends_on:
+      - db
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: payments
+      POSTGRES_USER: payments
+      POSTGRES_PASSWORD: payments
+    ports:
+      - "5432:5432"
